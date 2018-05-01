@@ -1,0 +1,350 @@
+
+/* Begin Raise Page Here */
+@font-face
+{
+    font-family: "Tele-Marines";
+    src: url('telemarines.ttf');
+}
+html, body
+{
+	max-width: 100%;
+	height: 100%;
+	margin: 0px 0px 0px 0px;
+}
+.frontPage
+{
+	overflow: hidden;
+}
+ul
+{
+	text-align: right;
+	margin-right: 15%;
+}
+li
+{
+	display: inline-block;
+	padding-right: 8px;
+	padding-left: 8px;
+	margin-right:5px; 
+	margin-left:5px;
+}
+.navBut
+{
+	text-decoration: none;
+	border-bottom: solid #ffd944 2px;
+}
+a
+{
+	font-family: "Tele-Marines";
+	color: white;
+}
+#video {
+  display: none;
+}
+/* Default display the image to replace the video on all devices */
+
+#videosubstitute {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%; 
+}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 720px) {
+  #video {
+    display: block;
+  }
+  #videosubstitute {
+    display: none;
+  }
+}
+
+#videoDiv {
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+
+#videoBlock,
+#videoMessage {
+  width: 100%;
+  height: 360px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#video {
+  width: 100%;
+  min-width: 100%; 
+}
+
+#videoMessage {
+  padding: 0.4em;
+  padding-top: 0px;
+  margin: 0;
+}
+
+#videoMessage {
+  color: white;
+  z-index: 99;
+}
+h1
+{
+	font-family: "Tele-Marines";
+	font-size: 72px;
+	text-align: center;
+	margin-top: 8%;
+}
+h2
+{
+	font-family: 'Merriweather Sans', sans-serif;
+}
+.majorStatement
+{
+	text-align: center;
+
+}
+h3
+{
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+@keyframes linear 
+{
+	
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 200px 0;
+	}
+	
+}
+.biliboard {
+	width: 200px;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+	background: #403f3fcf;
+	color: #fff;
+	font-family: 'Merriweather Sans', sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6%;
+	margin-bottom: 3px;
+	display: block;
+	text-decoration: none;
+}
+.biliboard:before {
+	content: '';
+	display: block;
+	height: 100%;
+	width: 100%;
+	border-radius: 3px;
+	transform: scale( 1.02, 1.08 );
+	position: absolute;
+	background: linear-gradient( 90deg, #ffffff00, 
+		#ffffff00, #ffdf61, #ffffff00, #ffffff00 );
+	background-position: 55px 0;
+	top: 0;
+	animation: linear 1s infinite linear;
+	left: 0;
+	z-index: -1;
+}
+
+.modal 
+{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0); /* Black w/ opacity */
+
+}
+.modal-content 
+{
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    height: 350px;
+    border-radius: 4px;
+    color: black;
+}
+span 
+{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+span:hover,span:focus 
+{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Begin How It Works Page Here */
+
+
+.h3align
+{
+	text-align: center;
+	margin-top: 6%;
+}
+.h3first
+{
+	display: inline-block;
+}
+.h3second
+{
+	margin-left: 18%;
+	display: inline-block;
+}
+.h3third
+{
+	margin-left: 15%;
+	display: inline-block;
+}
+
+.signUpLink
+{
+	display: block;
+	font-family: 'Merriweather Sans', sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 70px;
+}
+
+.headBox
+{
+	height: 200px;
+	width: 100%;
+}
+.bodyBox
+{
+	height: 120%;
+	width: 100%;
+	background-image: url('background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center center;
+	padding: 10px 10px 10px 10px;
+	border-top: solid #ffd944 3px;
+}
+.introBox
+{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto; 
+	margin-top: 20px;
+	background-color: white;
+	padding: 10px 20px 10px 20px;
+}
+.explainBox
+{
+	width: 70%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	padding: 10px 20px 10px 20px;
+}
+.howBox
+{
+	width: 70%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	padding: 10px 20px 10px 20px;
+}
+.concludeBox
+{
+	width: 70%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	padding: 10px 20px 10px 20px;
+}
+.previewBox
+{
+	width: 70%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	padding: 10px 20px 10px 20px;
+}
+.prevBut
+{
+	font-family: 'Merriweather Sans', sans-serif;
+	display: block;
+	width: 5%;
+	height: 100%;
+	margin: 20px auto 0px auto;
+	color: white;
+	text-decoration: none;
+	border-radius: 3px;
+	background-color: #005da0;
+	padding: 10px 30px 10px 30px;
+}
+.prevBut:hover
+{
+	cursor: pointer;
+	background-color: #005dd8;
+}
+
+
+/* Begin Preview Page Here */
+
+
+
+/* Begin Login Page Here */
+
+
+.logHead
+{
+	font-family: 'Tele-Marines';
+	margin-left: 5%;
+}
+.loginBox
+{
+	width: 35%;
+	height: 500px;
+	margin-top: 5%;
+	margin-left: 10%;
+	margin-right: 5%;
+	background-color: white;
+	border-radius: 3px;
+	border: solid #ffd944 2px;
+	display: inline-block;
+}
+.regHead
+{
+	font-family: 'Tele-Marines';
+	margin-left: 5%;
+}
+.signupBox
+{
+	width: 35%;
+	height: 500px;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: auto;
+	background-color: white;
+	border-radius: 3px;
+	border: solid #ffd944 2px;
+	display: inline-block;
+}

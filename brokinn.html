@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Brokinn | Device Repair</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+</head>
+<body class="frontPage">
+	<div id="videoDiv">
+  		<div id="videoBlock">
+    		<div>
+    			<img src="http://www.imi21.com/wp-content/uploads/2016/11/t12.jpg" id="videosubstitute" alt="" width="800">
+    		</div>
+    			<video preload="preload" id="video" autoplay="autoplay" loop="loop">
+					<source src= "30secondstomotivateyou.mp4" type="video/mp4"></source>
+				</video>
+    		<div id="videoMessage">
+    				<nav>
+						<ul>
+							<li class="activeTab"><a class="navBut" href="brokinn.html">Home</a></li>
+							<li><a class="navBut" href="schedule.html">Schedule</a></li>
+							<li><a class="navBut" href="login-signup.html">Login</a></li>
+						</ul>
+					</nav>
+      			<h1>BrOkinn</h1>
+      			<h2 class="majorStatement">The cheapest repairs ever.</h2>
+				<div class="h3align">
+					<h3 class="h3first">Simple.</h3>
+					<h3 class="h3second">Percise.</h3>
+					<h3 class="h3third">Affordable.</h3>
+				</div>
+
+				<a href="#" class="biliboard" id="request">Request Repair</a>
+				<div id="requestModal" class="modal">
+  					<div class="modal-content">
+    					<span class="closeRequest">&times;</span>
+    					<h2 style="text-align: center;">Scheduling a Repair</h2>
+    					<p>Please contact Riley to set up a time to repair your device!</p>
+    					<h4>Phone: (408)825-3678</h4>
+    					<h4>Email: rileyburg@yahoo.com</h4>
+  					</div>
+  				</div>
+				
+				<div class="signUpLink">
+					<p>Need an account? <a style="font-family: 'Merriweather Sans', sans-serif;" href="login-signup.html"> Sign Up</a></p>
+				</div>
+				
+    		</div>
+  		</div>
+	</div>
+	<script type="text/javascript">
+  		// Get the modal
+		var requestModal = document.getElementById('requestModal');
+
+		// Get the button that opens the modal
+		var requestBtn = document.getElementById("request");
+
+		// Get the <span> element that closes the modal
+		var spanRequest = document.getElementsByClassName("closeRequest")[0];
+
+		// When the user clicks on the button, open the modal 
+		requestBtn.onclick = function() 
+		{
+    		requestModal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		spanRequest.onclick = function() 
+		{
+    		requestModal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) 
+		{
+    		if (event.target == requestModal) 
+    		{
+        		requestModal.style.display = "none";
+    		}
+		}
+	</script>
+</body>
+</html>
